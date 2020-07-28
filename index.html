@@ -121,199 +121,7 @@
   </head>
   <!-- Body-->
   <body>
-    <!-- Page loading spinner-->
-    <div class="cs-page-loading active">
-      <div class="cs-page-loading-inner">
-        <div class="cs-page-spinner"></div>
-        <span>Loading...</span>
-      </div>
-    </div>
     <main class="cs-page-wrapper">
-      <!-- Sign In Modal-->
-      <div class="modal fade" id="modal-signin" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content border-0">
-            <div class="cs-view show" id="modal-signin-view">
-              <div class="modal-header border-0 bg-dark px-4">
-                <h4 class="modal-title text-light">Sign in</h4>
-                <button
-                  class="close text-light"
-                  type="button"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body px-4">
-                <p class="font-size-ms text-muted">
-                  Sign in to your account using email and password provided
-                  during registration.
-                </p>
-                <form class="needs-validation" novalidate>
-                  <div class="input-group-overlay form-group">
-                    <div class="input-group-prepend-overlay">
-                      <span class="input-group-text"
-                        ><i class="fe-mail"></i
-                      ></span>
-                    </div>
-                    <input
-                      class="form-control prepended-form-control"
-                      type="email"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
-                  <div
-                    class="input-group-overlay cs-password-toggle form-group"
-                  >
-                    <div class="input-group-prepend-overlay">
-                      <span class="input-group-text"
-                        ><i class="fe-lock"></i
-                      ></span>
-                    </div>
-                    <input
-                      class="form-control prepended-form-control"
-                      type="password"
-                      placeholder="Password"
-                      required
-                    />
-                    <label class="cs-password-toggle-btn">
-                      <input class="custom-control-input" type="checkbox" /><i
-                        class="fe-eye cs-password-toggle-indicator"
-                      ></i
-                      ><span class="sr-only">Show password</span>
-                    </label>
-                  </div>
-                  <div
-                    class="d-flex justify-content-between align-items-center form-group"
-                  >
-                    <div class="custom-control custom-checkbox">
-                      <input
-                        class="custom-control-input"
-                        type="checkbox"
-                        id="keep-signed"
-                      />
-                      <label class="custom-control-label" for="keep-signed"
-                        >Keep me signed in</label
-                      >
-                    </div>
-                    <a
-                      class="nav-link-style font-size-ms"
-                      href="password-recovery.html"
-                      >Forgot password?</a
-                    >
-                  </div>
-                  <button class="btn btn-primary btn-block" type="submit">
-                    Sign in
-                  </button>
-                  <p class="font-size-sm pt-3 mb-0">
-                    Don't have an account?
-                    <a
-                      href="#"
-                      class="font-weight-medium"
-                      data-view="#modal-signup-view"
-                      >Sign up</a
-                    >
-                  </p>
-                </form>
-              </div>
-            </div>
-            <div class="cs-view" id="modal-signup-view">
-              <div class="modal-header border-0 bg-dark px-4">
-                <h4 class="modal-title text-light">Sign up</h4>
-                <button
-                  class="close text-light"
-                  type="button"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body px-4">
-                <p class="font-size-ms text-muted">
-                  Registration takes less than a minute but gives you full
-                  control over your orders.
-                </p>
-                <form class="needs-validation" novalidate>
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Full name"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Email"
-                      required
-                    />
-                  </div>
-                  <div class="cs-password-toggle form-group">
-                    <input
-                      class="form-control"
-                      type="password"
-                      placeholder="Password"
-                      required
-                    />
-                    <label class="cs-password-toggle-btn">
-                      <input class="custom-control-input" type="checkbox" /><i
-                        class="fe-eye cs-password-toggle-indicator"
-                      ></i
-                      ><span class="sr-only">Show password</span>
-                    </label>
-                  </div>
-                  <div class="cs-password-toggle form-group">
-                    <input
-                      class="form-control"
-                      type="password"
-                      placeholder="Confirm password"
-                      required
-                    />
-                    <label class="cs-password-toggle-btn">
-                      <input class="custom-control-input" type="checkbox" /><i
-                        class="fe-eye cs-password-toggle-indicator"
-                      ></i
-                      ><span class="sr-only">Show password</span>
-                    </label>
-                  </div>
-                  <button class="btn btn-primary btn-block" type="submit">
-                    Sign up
-                  </button>
-                  <p class="font-size-sm pt-3 mb-0">
-                    Already have an account?
-                    <a
-                      href="#"
-                      class="font-weight-medium"
-                      data-view="#modal-signin-view"
-                      >Sign in</a
-                    >
-                  </p>
-                </form>
-              </div>
-            </div>
-            <div class="modal-body text-center px-4 pt-2 pb-4">
-              <hr />
-              <p class="font-size-sm font-weight-medium text-heading pt-4">
-                Or sign in with
-              </p>
-              <a class="social-btn sb-facebook sb-lg mx-1 mb-2" href="#"
-                ><i class="fe-facebook"></i></a
-              ><a class="social-btn sb-twitter sb-lg mx-1 mb-2" href="#"
-                ><i class="fe-twitter"></i></a
-              ><a class="social-btn sb-instagram sb-lg mx-1 mb-2" href="#"
-                ><i class="fe-instagram"></i></a
-              ><a class="social-btn sb-google sb-lg mx-1 mb-2" href="#"
-                ><i class="fe-google"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Navbar (Solid background)-->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
       <header
@@ -349,7 +157,7 @@
               data-view="#modal-signin-view"
               ><i class="fe-user font-size-xl mr-2"></i>Sign in</a
             ><a
-              class="btn btn-primary ml-grid-gutter d-none d-lg-inline-block"
+              class="btn btn-success ml-grid-gutter d-none d-lg-inline-block"
               href="#modal-signin"
               data-toggle="modal"
               data-view="#modal-signup-view"
@@ -806,7 +614,10 @@
       </section>
       <!-- About (Services)-->
       <section class="container mt-4 pt-5 mt-md-2 pt-md-7 pb-6">
-        <h2 class="text-center mb-3">About No5 Hair & Beauty Treats.</h2>
+        <h2 class="text-center mb-3">
+          About <br />
+          No5 Hair & Beauty Treats.
+        </h2>
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-xl-6 col-lg-7">
             <p class="text-center mb-0">
@@ -856,7 +667,7 @@
               <img
                 class="mb-3"
                 width="54"
-                src="img/demo/coworking/icons/building.svg"
+                src="img/demo/coworking/icons/building.png"
                 alt="3 Full Floors"
               />
               <div class="text-muted" style="font-size: 2.25rem;">3</div>
@@ -882,10 +693,10 @@
           style="background-image: url(img/demo/coworking/virtual-tour-bg.jpg);"
         ></div>
         <div class="container text-center py-md-5">
-          <a class="d-inline-block bg-primary rounded-circle" href="#"
+          <a class="d-inline-block"
             ><img
               width="195"
-              src="img/demo/coworking/icons/360-tour.svg"
+              src="img/demo/coworking/icons/360-tour.png"
               alt="360 VR Tour"
           /></a>
         </div>
@@ -903,85 +714,109 @@
                 <a class="nav-link active" href="#" data-group="all">All</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" data-group="open-space"
-                  >Open space</a
+                <a class="nav-link" href="#" data-group="eyelash">Eyelash</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-group="face-masks"
+                  >Face Masks</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" data-group="lounge">Lounge zone</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-group="kitchen">Kitchen</a>
+                <a class="nav-link" href="#" data-group="facial-treatment"
+                  >Facial Treatment</a
+                >
               </li>
             </ul>
             <div
               class="cs-masonry-grid cs-gallery overflow-hidden"
-              data-columns="3"
+              data-columns="4"
             >
-              <div class="cs-grid-item" data-groups='["lounge"]'>
+              <div class="cs-grid-item" data-groups='["eyelash"]'>
                 <a
                   class="cs-gallery-item rounded-lg"
                   href="img/demo/coworking/gallery/01.jpg"
-                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Lounge room&lt;/h6&gt;'
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Eyelash 1&lt;/h6&gt;'
                   ><img
                     src="img/demo/coworking/gallery/th01.jpg"
                     alt="Lounge room"
-                  /><span class="cs-gallery-caption">Lounge room</span></a
+                  /><span class="cs-gallery-caption">Eyelash 1</span></a
                 >
               </div>
-              <div class="cs-grid-item" data-groups='["open-space"]'>
+              <div class="cs-grid-item" data-groups='["eyelash"]'>
                 <a
                   class="cs-gallery-item rounded-lg"
                   href="img/demo/coworking/gallery/02.jpg"
-                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Open space&lt;/h6&gt;'
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Eyelash 2&lt;/h6&gt;'
                   ><img
                     src="img/demo/coworking/gallery/th02.jpg"
                     alt="Open space"
-                  /><span class="cs-gallery-caption">Open space</span></a
+                  /><span class="cs-gallery-caption">Eyelash 2</span></a
                 >
               </div>
-              <div class="cs-grid-item" data-groups='["open-space"]'>
+              <div class="cs-grid-item" data-groups='["eyelash"]'>
                 <a
                   class="cs-gallery-item rounded-lg"
                   href="img/demo/coworking/gallery/03.jpg"
-                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Open space&lt;/h6&gt;'
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Eyelash 3&lt;/h6&gt;'
                   ><img
                     src="img/demo/coworking/gallery/th03.jpg"
                     alt="Open space"
-                  /><span class="cs-gallery-caption">Open space</span></a
+                  /><span class="cs-gallery-caption">Eyelash 3</span></a
                 >
               </div>
-              <div class="cs-grid-item" data-groups='["kitchen"]'>
+              <div class="cs-grid-item" data-groups='["eyelash"]'>
                 <a
                   class="cs-gallery-item rounded-lg"
                   href="img/demo/coworking/gallery/04.jpg"
-                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Kitchen&lt;/h6&gt;'
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Eyelash 4&lt;/h6&gt;'
                   ><img
                     src="img/demo/coworking/gallery/th04.jpg"
                     alt="Kitchen"
-                  /><span class="cs-gallery-caption">Kitchen</span></a
+                  /><span class="cs-gallery-caption">Eyelash 4</span></a
                 >
               </div>
-              <div class="cs-grid-item" data-groups='["kitchen"]'>
+              <div class="cs-grid-item" data-groups='["face-masks"]'>
                 <a
                   class="cs-gallery-item rounded-lg"
                   href="img/demo/coworking/gallery/05.jpg"
-                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Kitchen&lt;/h6&gt;'
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Face Mask&lt;/h6&gt;'
                   ><img
                     src="img/demo/coworking/gallery/th05.jpg"
                     alt="Kitchen"
-                  /><span class="cs-gallery-caption">Kitchen</span></a
+                  /><span class="cs-gallery-caption">Face Mask</span></a
                 >
               </div>
-              <div class="cs-grid-item" data-groups='["open-space"]'>
+              <div class="cs-grid-item" data-groups='["face-masks"]'>
                 <a
                   class="cs-gallery-item rounded-lg"
                   href="img/demo/coworking/gallery/06.jpg"
-                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Open space&lt;/h6&gt;'
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Face Mask&lt;/h6&gt;'
                   ><img
                     src="img/demo/coworking/gallery/th06.jpg"
                     alt="Open space"
-                  /><span class="cs-gallery-caption">Open space</span></a
+                  /><span class="cs-gallery-caption">Face Mask</span></a
+                >
+              </div>
+              <div class="cs-grid-item" data-groups='["eyelash"]'>
+                <a
+                  class="cs-gallery-item rounded-lg"
+                  href="img/demo/coworking/gallery/07.jpg"
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Eyelash 5&lt;/h6&gt;'
+                  ><img
+                    src="img/demo/coworking/gallery/th07.jpg"
+                    alt="Open space"
+                  /><span class="cs-gallery-caption">Eyelash 5</span></a
+                >
+              </div>
+              <div class="cs-grid-item" data-groups='["facial-treatment"]'>
+                <a
+                  class="cs-gallery-item rounded-lg"
+                  href="img/demo/coworking/gallery/08.jpg"
+                  data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Facial treatment&lt;/h6&gt;'
+                  ><img
+                    src="img/demo/coworking/gallery/th08.jpg"
+                    alt="Open space"
+                  /><span class="cs-gallery-caption">Facial treatment</span></a
                 >
               </div>
             </div>
@@ -994,7 +829,7 @@
           <div class="col-md-6">
             <img
               class="d-block mx-auto"
-              src="img/demo/coworking/illustration01.svg"
+              src="img/demo/coworking/illustration01.jpg"
               alt="Illustration"
             />
           </div>
@@ -1065,7 +900,7 @@
           <div class="col-md-6 offset-lg-1 order-md-2">
             <img
               class="d-block mx-auto"
-              src="img/demo/coworking/illustration02.svg"
+              src="img/demo/coworking/illustration02.jpg"
               alt="Illustration"
             />
           </div>
@@ -1171,7 +1006,7 @@
               </form>
               <div class="row">
                 <div class="col-sm-6">
-                  <h5>Around office</h5>
+                  <h5>No5 Beauty Shop</h5>
                   <ul class="list-unstyled mb-0">
                     <li class="mb-0">396 Lillian Blvd, Holbrook</li>
                     <li class="mb-0">New York, USA</li>
@@ -1187,31 +1022,13 @@
               </div>
             </div>
             <div class="col-md-6 col-xl-5 offset-xl-1 cs-gallery">
-              <a
-                class="cs-gallery-item cs-map-popup border rounded-lg"
-                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476818218!2d-74.11976253858133!3d40.69740344296443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sua!4v1568574342685!5m2!1sen!2sua"
-                data-iframe="true"
-                data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;396 Lillian Blvd, Holbrook, NY 11741&lt;/h6&gt;'
-                ><img src="img/demo/coworking/map.jpg" alt="Maps" /><span
-                  class="cs-gallery-caption"
-                  ><i class="fe-maximize-2 font-size-xl mt-n1 mr-2"></i>Expand
-                  the map</span
-                >
-                <div
-                  class="position-absolute"
-                  style="
-                    width: 48px;
-                    top: 50%;
-                    left: 50%;
-                    margin-top: -24px;
-                    margin-left: -24px;
-                  "
-                >
-                  <img
-                    src="img/pages/contacts/marker.png"
-                    alt="Map marker"
-                  /></div
-              ></a>
+              <script
+                src="https://apps.elfsight.com/p/platform.js"
+                defer
+              ></script>
+              <div
+                class="elfsight-app-964e34bb-df7d-4144-a55f-c188d482abf2"
+              ></div>
             </div>
           </div>
         </div>
@@ -1237,10 +1054,10 @@
             >© All rights reserved. Made by</span
           ><a
             class="nav-link-style nav-link-light"
-            href="https://createx.studio/"
+            href="https://portilloronny6.github.io/website/indexen.html"
             target="_blank"
             rel="noopener"
-            >Createx Studio</a
+            >Ronny Portillo</a
           >
         </p>
       </div>
